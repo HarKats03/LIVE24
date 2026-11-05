@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NEWS 24 | Έκτακτη Ενημέρωση</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #050b16;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .satire {
+            background: #ffd43b;
+            color: #111;
+            text-align: center;
+            padding: 9px;
+            font-weight: 900;
+            letter-spacing: 1.5px;
+            font-size: 12px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background: linear-gradient(110deg, #07152d, #123c78);
+            border-bottom: 4px solid #35b9e8;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 38px;
+            font-weight: 900;
+        }
+
+        .logo small {
+            display: block;
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: #a9dff5;
+            margin-top: 5px;
+        }
+
+        .live {
+            background: #d71920;
+            padding: 10px 18px;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            background: #0b1830;
+            min-height: 430px;
+        }
+
+        .visual {
+            position: relative;
+            min-height: 400px;
+            background:
+                    linear-gradient(0deg, #07152d55, transparent),
+                    url("athina.png") center center / cover no-repeat;
+        }
+
+        .visual-label {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: #07152dcc;
+            padding: 8px 12px;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .story {
+            padding: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .eyebrow {
+            color: #ff6268;
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: clamp(32px, 4vw, 52px);
+            line-height: 1;
+            margin: 18px 0;
+            text-transform: uppercase;
+        }
+
+        .description {
+            color: #d4dfef;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .latest {
+            background: #d71920;
+            padding: 12px;
+            margin-top: 25px;
+            font-weight: 900;
+            width: fit-content;
+        }
+
+        .ticker {
+            background: #061127;
+            border-top: 2px solid #31517b;
+            padding: 17px;
+            display: flex;
+            gap: 25px;
+            overflow: hidden;
+            white-space: nowrap;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .ticker strong {
+            background: #d71920;
+            padding: 12px;
+            margin: -17px 0 -17px -17px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .panel {
+            background: #0c1b35;
+            border: 1px solid #203d65;
+            padding: 25px;
+        }
+
+        .panel h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .panel p {
+            color: #c8d5e8;
+            line-height: 1.7;
+        }
+
+        .warning {
+            color: #ff6268 !important;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #8295b1;
+            font-size: 12px;
+        }
+
+        @media(max-width: 750px) {
+            .hero,
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .visual {
+                min-height: 260px;
+            }
+
+            .story {
+                padding: 25px;
+            }
+
+            .logo {
+                font-size: 28px;
+            }
+
+            .ticker {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="satire">
+    NEWS BROADCAST
+</div>
+
+<div class="container">
+
+    <header>
+        <div class="logo">
+            NEWS 24
+            <small>ΔΙΕΘΝΕΣ ΕΝΗΜΕΡΩΤΙΚΟ ΔΙΚΤΥΟ</small>
+        </div>
+
+        <div class="live">
+            LIVE · ΑΘΗΝΑ
+        </div>
+    </header>
+
+    <section class="hero">
+
+        <div class="visual">
+            <div class="visual-label">
+                ΑΘΗΝΑ · ΕΙΚΟΝΑ ΑΡΧΕΙΟΥ
+            </div>
+        </div>
+
+        <div class="story">
+
+            <div class="eyebrow">
+                ΕΚΤΑΚΤΗ ΕΙΔΗΣΗ
+            </div>
+
+            <h1>
+                Σοβαρή κλιμάκωση με επίκεντρο την Αθήνα
+            </h1>
+
+            <div class="description">
+                Έντονη διπλωματική αντιπαράθεση μεταξύ
+                Ρωσίας και Ελλάδας στο επίκεντρο των εξελίξεων.
+                Η πρωτεύουσα βρίσκεται στο επίκεντρο
+                ενός πρωτοφανούς σεναρίου κρίσης.
+            </div>
+
+            <div class="latest">
+                ΤΕΛΕΥΤΑΙΑ ΕΞΕΛΙΞΗ
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="ticker">
+
+        <strong>NEWS ALERT</strong>
+
+        <span>Υποθετική έκτακτη σύσκεψη στην Αθήνα</span>
+
+        <span>•</span>
+
+        <span>Το Σύνταγμα στο επίκεντρο της αφήγησης</span>
+
+        <span>•</span>
+
+        <span>Νεότερες εξελίξεις σύντομα</span>
+
+    </div>
+
+    <section class="content">
+
+        <div class="panel">
+
+            <h2>Οι τελευταίες εξελίξεις</h2>
+
+            <p>
+                Η κατάσταση στην ελληνική πρωτεύουσα
+                παρουσιάζεται ιδιαίτερα τεταμένη στο πλαίσιο
+                του σατιρικού σεναρίου. Οι εξελίξεις
+                παρακολουθούνται λεπτό προς λεπτό, ενώ
+                το ενδιαφέρον επικεντρώνεται στις επόμενες ώρες.
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        NEWS 24 · 05 NOVEMBER 2026<br>
+        NEWS LIVE
+    </footer>
+
+</div>
+
+</body>
+</html>
